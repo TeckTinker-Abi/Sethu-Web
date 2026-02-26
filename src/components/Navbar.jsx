@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import EnquiryForm from "./EnquiryForm";
+import { createPortal } from "react-dom";
 
 // Reusable Dropdown Component with Hover "Pop" and Slide Effect
 const NavDropdown = ({ title, items }) => {
@@ -186,26 +187,24 @@ const Navbar = () => {
           </button>
         </div>
       </div>
-      {isFormOpen && (
-        <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[200] flex items-center justify-center px-4 py-10 overflow-y-auto">
-
-          <div className="bg-white w-full max-w-4xl rounded-xl shadow-[0_30px_80px_rgba(0,0,0,0.25)] relative animate-[fadeIn_.3s_ease-in-out]">
-
-            {/* Close Button */}
-            <button
-              onClick={() => setIsFormOpen(false)}
-              className="absolute top-5 right-6 text-3xl font-light text-deep-espresso hover:text-red-500 transition"
-            >
-              &times;
-            </button>
-
-            <EnquiryForm />
-
-          </div>
-        </div>
-      )}
+     {isFormOpen &&
+  createPortal(
+    <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[200] flex items-center justify-center px-4 py-10 overflow-y-auto">
+      <div className="bg-white w-full max-w-4xl rounded-xl shadow-[0_30px_80px_rgba(0,0,0,0.25)] relative animate-[fadeIn_.3s_ease-in-out]">
+        <button
+          onClick={() => setIsFormOpen(false)}
+          className="absolute top-5 right-6 text-3xl font-light text-deep-espresso hover:text-red-500 transition"
+        >
+          &times;
+        </button>
+        <EnquiryForm />
+      </div>
+    </div>,
+    document.body
+  )}
     </nav>
   );
 };
 
 export default Navbar;
+
