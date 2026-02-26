@@ -29,10 +29,10 @@ function Home() {
       <Management />
       <PlacementNews />
       <WhyChoose />
-      <Programs />
       <Placements />
       <CampusLife />
       <CollegeVideo />
+      <Programs />
       <Footer />
     </div>
   );

@@ -93,6 +93,12 @@ const Navbar = () => {
   };
 
   return (
+    // <nav 
+    //   className={`fixed top-0 w-full z-50 transition-all duration-500 px-4 sm:px-6 ${
+    //     isScrolled 
+    //       ? "bg-warm-ivory/95 backdrop-blur-md shadow-lg py-1" 
+    //       : "bg-white py-3" 
+    //   }`}
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-500 ${isScrolled
           ? "bg-warm-ivory/95 backdrop-blur-md shadow-md py-2"
