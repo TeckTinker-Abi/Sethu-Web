@@ -93,17 +93,12 @@ const Navbar = () => {
   };
 
   return (
-    // <nav 
-    //   className={`fixed top-0 w-full z-50 transition-all duration-500 px-4 sm:px-6 ${
-    //     isScrolled 
-    //       ? "bg-warm-ivory/95 backdrop-blur-md shadow-lg py-1" 
-    //       : "bg-white py-3" 
-    //   }`}
-    <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-500 ${isScrolled
-          ? "bg-warm-ivory/95 backdrop-blur-md shadow-md py-2"
-          : "bg-white py-2 sm:py-3"
-        }`}
+    <nav 
+      className={`fixed top-0 w-full z-50 transition-all duration-500 px-4 sm:px-6 ${
+        isScrolled 
+          ? "bg-warm-ivory/95 backdrop-blur-md shadow-lg py-1" 
+          : "bg-warm-ivory py-2" 
+      }`}
     >
       <div className="w-full flex justify-between items-center px-3 sm:px-4 md:px-6">        {/* Logo Section with Accreditation (Responsive sizes) */}
         <div className="flex items-center gap-2 sm:gap-4 group cursor-pointer flex-shrink-0">
