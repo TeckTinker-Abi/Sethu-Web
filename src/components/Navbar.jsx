@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import EnquiryForm from "./EnquiryForm";
+import EnquiryForm from "./home/EnquiryForm";
 import { createPortal } from "react-dom";
 
 // Reusable Dropdown Component with Hover "Pop" and Slide Effect

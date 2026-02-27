@@ -1,0 +1,14 @@
+export { default as Hero } from "./Hero";
+export { default as Founder } from "./Founder";
+export { default as CollegeVideo } from "./CollegeVideo";
+export { default as PlacementDrive } from "./PlacementDrive";
+export { default as LatestEvents } from "./LatestEvents";
+export { default as NewsRelease } from "./NewsRelease";
+export { default as Stats } from "./Stats";
+export { default as Management } from "./Management";
+export { default as PlacementNews } from "./PlacementNews";
+export { default as WhyChoose } from "./WhyChoose";
+export { default as Programs } from "./Programs";
+export { default as Placements } from "./Placements";
+export { default as CampusLife } from "./CampusLife";
+export { default as UpcomingEvents } from "./UpcomingEvents";
